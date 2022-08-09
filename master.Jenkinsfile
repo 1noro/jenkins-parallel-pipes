@@ -7,10 +7,14 @@ pipeline {
             }
         }
         stage ('Run slave1') {
-            build job: 'parallel-slave1'
+            steps {
+                build job: 'parallel-slave1'
+            }
         }
         stage ('Run slave2') {
-            build job: 'parallel-slave2'
+            steps {
+                build job: 'parallel-slave2'
+            }
         }
     }
 }
