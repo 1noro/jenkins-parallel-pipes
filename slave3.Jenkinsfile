@@ -5,7 +5,7 @@ pipeline {
             steps {
                 sh 'echo "hello from slave3 (the random one)"'
                 sh 'sleep 3'
-                sh 'exit ' + Integer.toString(new Random().nextInt(2))
+                sh 'exit 1'
             }
         }
     }
