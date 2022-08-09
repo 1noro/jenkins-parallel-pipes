@@ -3,10 +3,8 @@ pipeline {
     stages {
         stage('stuff') {
             steps {
-                sh '''
-                    echo hello from slave1
-                    sleep 5
-                '''
+                sh 'echo hello from slave1'
+                sh 'sleep 5'
             }
         }
     }
