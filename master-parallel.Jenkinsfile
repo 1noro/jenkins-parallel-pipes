@@ -18,6 +18,11 @@ pipeline {
                         build job: 'parallel-slave2'
                     }
                 }
+                stage ('Run slave3') {
+                    steps {
+                        build job: 'parallel-slave3'
+                    }
+                }
             }
         }
     }
